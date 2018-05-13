@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project(avx2_example)
+set(CMAKE_CXX_STANDARD 11)
+add_executable(${PROJECT_NAME} main.cpp)
+target_compile_options(${PROJECT_NAME} PRIVATE -mavx -O0)
